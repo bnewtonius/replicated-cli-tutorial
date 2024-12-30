@@ -21,6 +21,11 @@ spec:
       value: ""
       default: please change this value
       when: repl{{ ConfigOptionEquals "show_text_inputs" "1" }}
+    - name: more_text
+      title: The answer to life, the universe, and everything
+      type: text
+      value: "42"
+      when: repl{{ ConfigOptionEquals "show_text_inputs" "1"}}
     - name: api_token
       title: API token
       type: password
